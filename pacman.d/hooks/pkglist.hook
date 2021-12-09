@@ -1,0 +1,10 @@
+[Trigger]
+Operation = Remove
+Operation = Install
+Type = Package
+Target = *
+
+[Action]
+Description = Update package list
+When = PostTransaction
+Exec = /home/gabriel/.local/bin/Polybar/arch_updates backup

@@ -1,0 +1,9 @@
+[Trigger]
+Operation = Upgrade
+Type = Package
+Target = *
+
+[Action]
+Description = Update upgrade count
+When = PostTransaction
+Exec = /home/gabriel/.local/bin/Polybar/arch_updates clean

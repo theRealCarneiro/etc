@@ -1,0 +1,11 @@
+#!/bin/sh
+#
+# LightDM wrapper to run around X sessions.
+
+[ -f $HOME/.profile ] && . $HOME/.profile 
+
+export XAUTHORITY="/var/run/lightdm/$USER/xauthority"
+
+! [ ${@##*/} = 'xinitrcsession-helper' ] && WM=$@
+
+exec $XDG_CONFIG_HOME/x11/xinitrc
