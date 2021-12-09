@@ -1,0 +1,1 @@
+root=UUID=20543b5f-7b02-458e-9c84-2c4e57bf8518 ro quiet splash intel_pstate=disable loglevel=3 rd.udev.log_priority=3 amdgpu.ppfeaturemask=0xffffffff 
